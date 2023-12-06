@@ -87,6 +87,8 @@ services:
       - elk
     depends_on:
       - elasticsearch
+      - kibana
+      - logstash
     restart: unless-stopped
 
   kibana:
